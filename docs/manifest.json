@@ -1,5 +1,5 @@
 {
-  "generated": "2026-01-31T14:00:00Z",
+  "generated": "2026-01-31T15:00:00Z",
   "repository": {
     "owner": "tractorjuice",
     "name": "arckit-test-project-v18-smart-meter",
@@ -37,6 +37,12 @@
           "title": "Risk Register",
           "category": "Governance",
           "documentId": "ARC-001-RISK-v1.0"
+        },
+        {
+          "path": "projects/001-smart-meter-app/ARC-001-RSCH-v1.0.md",
+          "title": "Technology Research",
+          "category": "Research",
+          "documentId": "ARC-001-RSCH-v1.0"
         }
       ],
       "diagrams": [],
