@@ -1,10 +1,17 @@
 {
-  "generated": "2026-01-31T00:00:00.000Z",
+  "generated": "2026-01-31T12:00:00Z",
+  "repository": {
+    "owner": "tractorjuice",
+    "name": "arckit-test-project-v18-smart-meter",
+    "branch": "main"
+  },
+  "defaultDocument": "projects/000-global/ARC-000-PRIN-v1.0.md",
   "global": [
     {
-      "title": "Architecture Principles",
       "path": "projects/000-global/ARC-000-PRIN-v1.0.md",
+      "title": "Architecture Principles",
       "category": "Architecture",
+      "documentId": "ARC-000-PRIN-v1.0",
       "isDefault": true
     }
   ],
@@ -14,18 +21,23 @@
       "name": "Smart Meter Consumer App",
       "documents": [
         {
-          "title": "Stakeholder Analysis",
           "path": "projects/001-smart-meter-app/ARC-001-STKE-v1.0.md",
-          "category": "Discovery"
+          "title": "Stakeholder Drivers",
+          "category": "Discovery",
+          "documentId": "ARC-001-STKE-v1.0"
         },
         {
-          "title": "Requirements",
           "path": "projects/001-smart-meter-app/ARC-001-REQ-v1.0.md",
-          "category": "Discovery"
+          "title": "Requirements",
+          "category": "Discovery",
+          "documentId": "ARC-001-REQ-v1.0"
         }
       ],
       "diagrams": [],
       "decisions": [],
+      "wardleyMaps": [],
+      "dataContracts": [],
+      "reviews": [],
       "vendors": []
     }
   ]
