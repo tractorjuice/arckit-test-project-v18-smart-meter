@@ -1,0 +1,32 @@
+{
+  "generated": "2026-01-31T00:00:00.000Z",
+  "global": [
+    {
+      "title": "Architecture Principles",
+      "path": "projects/000-global/ARC-000-PRIN-v1.0.md",
+      "category": "Architecture",
+      "isDefault": true
+    }
+  ],
+  "projects": [
+    {
+      "id": "001-smart-meter-app",
+      "name": "Smart Meter Consumer App",
+      "documents": [
+        {
+          "title": "Stakeholder Analysis",
+          "path": "projects/001-smart-meter-app/ARC-001-STKE-v1.0.md",
+          "category": "Discovery"
+        },
+        {
+          "title": "Requirements",
+          "path": "projects/001-smart-meter-app/ARC-001-REQ-v1.0.md",
+          "category": "Discovery"
+        }
+      ],
+      "diagrams": [],
+      "decisions": [],
+      "vendors": []
+    }
+  ]
+}
