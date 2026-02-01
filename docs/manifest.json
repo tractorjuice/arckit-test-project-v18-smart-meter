@@ -1,5 +1,5 @@
 {
-  "generated": "2026-02-01T12:00:00Z",
+  "generated": "2026-02-01T14:00:00Z",
   "repository": {
     "owner": "tractorjuice",
     "name": "arckit-test-project-v18-smart-meter",
@@ -43,6 +43,12 @@
           "title": "Project Plan",
           "category": "Planning",
           "documentId": "ARC-001-PLAN-v1.0"
+        },
+        {
+          "path": "projects/001-smart-meter-app/ARC-001-DATA-v1.0.md",
+          "title": "Data Model",
+          "category": "Architecture",
+          "documentId": "ARC-001-DATA-v1.0"
         },
         {
           "path": "projects/001-smart-meter-app/ARC-001-RISK-v1.0.md",
