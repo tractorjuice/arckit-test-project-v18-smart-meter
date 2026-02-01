@@ -1,5 +1,5 @@
 {
-  "generated": "2026-02-01T14:00:00Z",
+  "generated": "2026-02-01T16:00:00Z",
   "repository": {
     "owner": "tractorjuice",
     "name": "arckit-test-project-v18-smart-meter",
@@ -39,6 +39,12 @@
           "documentId": "ARC-001-RSCH-v1.0"
         },
         {
+          "path": "projects/001-smart-meter-app/ARC-001-RSCH-v2.0.md",
+          "title": "Octopus API Research & App API Specification",
+          "category": "Discovery",
+          "documentId": "ARC-001-RSCH-v2.0"
+        },
+        {
           "path": "projects/001-smart-meter-app/ARC-001-PLAN-v1.0.md",
           "title": "Project Plan",
           "category": "Planning",
@@ -67,12 +73,6 @@
           "title": "Data Protection Impact Assessment",
           "category": "Compliance",
           "documentId": "ARC-001-DPIA-v1.0"
-        },
-        {
-          "path": "projects/001-smart-meter-app/ARC-001-RSCH-v2.0.md",
-          "title": "Octopus API Research & App API Specification",
-          "category": "Architecture",
-          "documentId": "ARC-001-RSCH-v2.0"
         }
       ],
       "diagrams": [],
