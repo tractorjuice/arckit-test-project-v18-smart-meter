@@ -1,5 +1,5 @@
 {
-  "generated": "2026-01-31T15:00:00Z",
+  "generated": "2026-02-01T12:00:00Z",
   "repository": {
     "owner": "tractorjuice",
     "name": "arckit-test-project-v18-smart-meter",
@@ -21,16 +21,28 @@
       "name": "Smart Meter Consumer App",
       "documents": [
         {
+          "path": "projects/001-smart-meter-app/ARC-001-REQ-v1.0.md",
+          "title": "Requirements",
+          "category": "Discovery",
+          "documentId": "ARC-001-REQ-v1.0"
+        },
+        {
           "path": "projects/001-smart-meter-app/ARC-001-STKE-v1.0.md",
           "title": "Stakeholder Drivers",
           "category": "Discovery",
           "documentId": "ARC-001-STKE-v1.0"
         },
         {
-          "path": "projects/001-smart-meter-app/ARC-001-REQ-v1.0.md",
-          "title": "Requirements",
+          "path": "projects/001-smart-meter-app/ARC-001-RSCH-v1.0.md",
+          "title": "Technology Research",
           "category": "Discovery",
-          "documentId": "ARC-001-REQ-v1.0"
+          "documentId": "ARC-001-RSCH-v1.0"
+        },
+        {
+          "path": "projects/001-smart-meter-app/ARC-001-PLAN-v1.0.md",
+          "title": "Project Plan",
+          "category": "Planning",
+          "documentId": "ARC-001-PLAN-v1.0"
         },
         {
           "path": "projects/001-smart-meter-app/ARC-001-RISK-v1.0.md",
@@ -39,10 +51,10 @@
           "documentId": "ARC-001-RISK-v1.0"
         },
         {
-          "path": "projects/001-smart-meter-app/ARC-001-RSCH-v1.0.md",
-          "title": "Technology Research",
-          "category": "Research",
-          "documentId": "ARC-001-RSCH-v1.0"
+          "path": "projects/001-smart-meter-app/ARC-001-SECD-v1.0.md",
+          "title": "Secure by Design",
+          "category": "Compliance",
+          "documentId": "ARC-001-SECD-v1.0"
         }
       ],
       "diagrams": [],
