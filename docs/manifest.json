@@ -1,5 +1,5 @@
 {
-  "generated": "2026-02-01T17:00:00Z",
+  "generated": "2026-02-03T00:00:00Z",
   "repository": {
     "owner": "tractorjuice",
     "name": "arckit-test-project-v18-smart-meter",
@@ -18,19 +18,25 @@
   "projects": [
     {
       "id": "001-smart-meter-app",
-      "name": "Smart Meter Consumer App",
+      "name": "Smart Meter App",
       "documents": [
         {
-          "path": "projects/001-smart-meter-app/ARC-001-REQ-v1.0.md",
-          "title": "Requirements",
-          "category": "Discovery",
-          "documentId": "ARC-001-REQ-v1.0"
+          "path": "projects/001-smart-meter-app/ARC-001-PLAN-v1.0.md",
+          "title": "Project Plan",
+          "category": "Planning",
+          "documentId": "ARC-001-PLAN-v1.0"
         },
         {
           "path": "projects/001-smart-meter-app/ARC-001-STKE-v1.0.md",
           "title": "Stakeholder Drivers",
           "category": "Discovery",
           "documentId": "ARC-001-STKE-v1.0"
+        },
+        {
+          "path": "projects/001-smart-meter-app/ARC-001-REQ-v1.0.md",
+          "title": "Requirements",
+          "category": "Discovery",
+          "documentId": "ARC-001-REQ-v1.0"
         },
         {
           "path": "projects/001-smart-meter-app/ARC-001-RSCH-v1.0.md",
@@ -40,21 +46,15 @@
         },
         {
           "path": "projects/001-smart-meter-app/ARC-001-RSCH-v2.0.md",
-          "title": "Octopus API Research & App API Specification",
+          "title": "Technology Research v2 (Octopus Energy API Deep-Dive)",
           "category": "Discovery",
           "documentId": "ARC-001-RSCH-v2.0"
         },
         {
-          "path": "projects/001-smart-meter-app/ARC-001-PLAN-v1.0.md",
-          "title": "Project Plan",
-          "category": "Planning",
-          "documentId": "ARC-001-PLAN-v1.0"
-        },
-        {
-          "path": "projects/001-smart-meter-app/ARC-001-DATA-v1.0.md",
-          "title": "Data Model",
-          "category": "Architecture",
-          "documentId": "ARC-001-DATA-v1.0"
+          "path": "projects/001-smart-meter-app/ARC-001-DSCT-v1.0.md",
+          "title": "Data Source Discovery",
+          "category": "Discovery",
+          "documentId": "ARC-001-DSCT-v1.0"
         },
         {
           "path": "projects/001-smart-meter-app/ARC-001-RISK-v1.0.md",
@@ -63,10 +63,10 @@
           "documentId": "ARC-001-RISK-v1.0"
         },
         {
-          "path": "projects/001-smart-meter-app/ARC-001-SECD-v1.0.md",
-          "title": "Secure by Design",
-          "category": "Compliance",
-          "documentId": "ARC-001-SECD-v1.0"
+          "path": "projects/001-smart-meter-app/ARC-001-DATA-v1.0.md",
+          "title": "Data Model",
+          "category": "Architecture",
+          "documentId": "ARC-001-DATA-v1.0"
         },
         {
           "path": "projects/001-smart-meter-app/ARC-001-DPIA-v1.0.md",
@@ -75,10 +75,22 @@
           "documentId": "ARC-001-DPIA-v1.0"
         },
         {
-          "path": "projects/001-smart-meter-app/ARC-001-DSCT-v1.0.md",
-          "title": "Data Source Discovery",
-          "category": "Discovery",
-          "documentId": "ARC-001-DSCT-v1.0"
+          "path": "projects/001-smart-meter-app/ARC-001-SECD-v1.0.md",
+          "title": "Secure by Design Assessment",
+          "category": "Compliance",
+          "documentId": "ARC-001-SECD-v1.0"
+        }
+      ],
+      "research": [
+        {
+          "path": "projects/001-smart-meter-app/research/ARC-001-AWRS-v1.0.md",
+          "title": "AWS Technology Research",
+          "documentId": "ARC-001-AWRS-v1.0"
+        },
+        {
+          "path": "projects/001-smart-meter-app/research/ARC-001-AZRS-v1.0.md",
+          "title": "Azure Technology Research",
+          "documentId": "ARC-001-AZRS-v1.0"
         }
       ],
       "diagrams": [],

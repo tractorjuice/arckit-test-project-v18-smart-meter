@@ -969,6 +969,17 @@
                         });
                     }
 
+                    if (project.research) {
+                        project.research.forEach(doc => {
+                            allDocuments.push({
+                                ...doc,
+                                project: projectName,
+                                category: 'Research',
+                                searchText: `${doc.title} research ${projectName}`.toLowerCase()
+                            });
+                        });
+                    }
+
                     if (project.diagrams) {
                         project.diagrams.forEach(doc => {
                             allDocuments.push({
@@ -1227,6 +1238,14 @@
                 });
             }
 
+            // Research
+            if (project.research && project.research.length > 0) {
+                listHtml += `<li class="app-nav-category">Research</li>`;
+                project.research.forEach(doc => {
+                    listHtml += `<li><a href="#${doc.path}" data-path="${doc.path}">${doc.title}</a></li>`;
+                });
+            }
+
             // Diagrams
             if (project.diagrams && project.diagrams.length > 0) {
                 listHtml += `<li class="app-nav-category">Diagrams</li>`;
@@ -1414,14 +1433,14 @@
                         `Generated: ${date.toLocaleDateString()}`;
                 }
 
+                // Build search index
+                buildSearchIndex(manifest);
+
                 // Update header stats
                 const totalDocs = allDocuments.length || countDocuments(manifest);
                 const projectCount = manifest.projects ? manifest.projects.length : 0;
                 document.getElementById('header-stats').innerHTML =
                     `<span class="app-stat-value">${totalDocs}</span> docs · <span class="app-stat-value">${projectCount}</span> projects`;
-
-                // Build search index
-                buildSearchIndex(manifest);
 
                 // Build navigation
                 buildNavigation(manifest);
@@ -1444,13 +1463,15 @@
                     const link = document.querySelector(`a[data-path="${path}"]`);
                     if (link) link.classList.add('active');
                 } else if (manifest.defaultDocument) {
-                    // Load default document (Architecture Principles)
                     const path = manifest.defaultDocument;
                     window.location.hash = path;
                     loadDocument(path);
 
-                    const link = document.querySelector(`a[data-path="${path}"]`);
-                    if (link) link.classList.add('active');
+                    // Mark as active
+                    setTimeout(() => {
+                        const link = document.querySelector(`a[data-path="${path}"]`);
+                        if (link) link.classList.add('active');
+                    }, 100);
                 }
 
             } catch (error) {
@@ -1468,6 +1489,7 @@
             if (manifest.projects) {
                 manifest.projects.forEach(p => {
                     if (p.documents) count += p.documents.length;
+                    if (p.research) count += p.research.length;
                     if (p.diagrams) count += p.diagrams.length;
                     if (p.decisions) count += p.decisions.length;
                     if (p.vendors) {
