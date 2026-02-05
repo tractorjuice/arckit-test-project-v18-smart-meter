@@ -18,11 +18,6 @@
       "category": "Discovery"
     },
     {
-      "path": "docs/guides/stakeholder-analysis.md",
-      "title": "Stakeholder Analysis Guide",
-      "category": "Discovery"
-    },
-    {
       "path": "docs/guides/research.md",
       "title": "Technology Research Guide",
       "category": "Discovery"
@@ -260,6 +255,11 @@
     {
       "path": "docs/guides/migration.md",
       "title": "File Migration Playbook",
+      "category": "Other"
+    },
+    {
+      "path": "docs/guides/customize.md",
+      "title": "Template Customization Guide",
       "category": "Other"
     }
   ],
