@@ -2,7 +2,7 @@
 
 **Architecture governance project for a mobile application enabling citizens to access and visualise their smart meter energy consumption data.**
 
-Built with [ArcKit](https://tractorjuice.github.io/arc-kit/) -- 43 AI-driven slash commands for architecture governance across Claude Code, Gemini CLI, and Codex CLI.
+Built with [ArcKit](https://tractorjuice.github.io/arc-kit/) — 80+ AI-driven slash commands for architecture governance, installed as a plugin for Claude Code.
 
 ## Project Context
 
@@ -41,105 +41,123 @@ This project designs a consumer-facing mobile application that:
 
 ## Getting Started
 
-1. Start your AI assistant (Claude Code, Gemini CLI, or Codex CLI)
-2. Run `/arckit.principles` to establish architecture governance
-3. Run `/arckit.stakeholders` to analyze stakeholder drivers and goals
-4. Run `/arckit.requirements` to define requirements for the smart meter app
+1. Start Claude Code in this repository — the `arckit` plugin loads automatically via the marketplace configured in `.claude/settings.json`
+2. Run `/arckit:start` for guided onboarding and workflow selection
+3. Run `/arckit:principles` to establish architecture governance
+4. Run `/arckit:stakeholders` to analyze stakeholder drivers and goals
+5. Run `/arckit:requirements` to define requirements for the smart meter app
 
-Full dependency ordering is documented in [`DEPENDENCY-MATRIX.md`](DEPENDENCY-MATRIX.md).
+Run `/arckit:health` at any time to scan for stale artifacts, missing traceability, and governance gaps. Run `/arckit:pages` to regenerate the `docs/` site.
 
 ## Available Commands
 
-Once you start your AI assistant, you'll have access to 43 commands:
+The plugin currently provides 80+ slash commands across architecture, procurement, compliance, and operations. A representative subset:
 
-#### Project Planning
-- `/arckit.plan` - Create project plan with timeline, phases, and gates
+#### Discovery & Planning
+- `/arckit:start` — Guided project onboarding and workflow selection
+- `/arckit:plan` — Create project plan with timeline, phases, and gates
+- `/arckit:principles` — Create or update architecture principles
+- `/arckit:stakeholders` — Analyse stakeholder drivers, goals, and outcomes
+- `/arckit:risk` — Risk register following HM Treasury Orange Book
+- `/arckit:sobc` — Strategic Outline Business Case (Green Book 5-case)
+- `/arckit:requirements` — Business and technical requirements
+- `/arckit:data-model` — Data model with ERD, GDPR compliance, and governance
+- `/arckit:research` — Market research with build vs buy analysis
+- `/arckit:datascout` — Discover external data sources, APIs, and open data portals
+- `/arckit:wardley` — Strategic Wardley Maps (plus `.value-chain`, `.climate`, `.doctrine`, `.gameplay`)
+- `/arckit:adr` — Architectural decisions with options analysis
 
-#### Core Workflow
-- `/arckit.principles` - Create or update architecture principles
-- `/arckit.stakeholders` - Analyze stakeholder drivers, goals, and outcomes
-- `/arckit.risk` - Create comprehensive risk register (Orange Book)
-- `/arckit.sobc` - Create Strategic Outline Business Case (Green Book 5-case)
-- `/arckit.requirements` - Define comprehensive requirements
-- `/arckit.data-model` - Create data model with ERD, GDPR compliance, data governance
-- `/arckit.research` - Research technology, services, and products with build vs buy analysis
-- `/arckit.datascout` - Discover external data sources, APIs, and open data portals
-- `/arckit.wardley` - Create strategic Wardley Maps for build vs buy and procurement strategy
-- `/arckit.adr` - Document architectural decisions with options analysis
+#### Cloud & Code Research
+- `/arckit:aws-research` — AWS services via AWS Knowledge MCP
+- `/arckit:azure-research` — Azure services via Microsoft Learn MCP
+- `/arckit:gcp-research` — Google Cloud services via Google Developer Knowledge MCP
+- `/arckit:gov-reuse` / `/arckit:gov-code-search` / `/arckit:gov-landscape` — UK government code reuse and landscape mapping
 
-#### Cloud Research
-- `/arckit.aws-research` - Research AWS services using AWS Knowledge MCP
-- `/arckit.azure-research` - Research Azure services using Microsoft Learn MCP
-
-#### Vendor Procurement
-- `/arckit.sow` - Generate Statement of Work (RFP)
-- `/arckit.dos` - Digital Outcomes and Specialists (DOS) procurement
-- `/arckit.gcloud-search` - Search G-Cloud services on UK Digital Marketplace
-- `/arckit.gcloud-clarify` - Validate G-Cloud services and generate clarification questions
-- `/arckit.evaluate` - Create vendor evaluation framework and score vendors
+#### Procurement
+- `/arckit:sow` — Statement of Work / RFP
+- `/arckit:dos` — Digital Outcomes and Specialists procurement
+- `/arckit:gcloud-search` / `/arckit:gcloud-clarify` — G-Cloud discovery and supplier clarifications
+- `/arckit:evaluate` / `/arckit:score` — Vendor evaluation framework and scoring
+- `/arckit:grants` — UK government grants, charitable funding, and accelerators
 
 #### Design & Delivery
-- `/arckit.diagram` - Generate visual architecture diagrams using Mermaid
-- `/arckit.hld-review` - Review High-Level Design
-- `/arckit.dld-review` - Review Detailed Design
-- `/arckit.backlog` - Generate prioritised product backlog with GDS user stories
-- `/arckit.devops` - Create DevOps strategy with CI/CD pipelines
-- `/arckit.finops` - Create FinOps strategy for cloud cost management
-- `/arckit.mlops` - Create MLOps strategy with model lifecycle and governance
-- `/arckit.operationalize` - Create operational readiness pack with runbooks and DR/BCP
-- `/arckit.roadmap` - Create strategic architecture roadmap
-- `/arckit.platform-design` - Create platform strategy using Platform Design Toolkit
+- `/arckit:diagram` — Mermaid / PlantUML C4 architecture diagrams
+- `/arckit:dfd` — Yourdon-DeMarco Data Flow Diagrams
+- `/arckit:hld-review` / `/arckit:dld-review` — High- and Detailed-Level Design reviews
+- `/arckit:backlog` / `/arckit:trello` — Prioritised product backlog and Trello export
+- `/arckit:devops` / `/arckit:finops` / `/arckit:mlops` — DevOps, FinOps, MLOps strategies
+- `/arckit:operationalize` — Operational readiness pack with runbooks and DR/BCP
+- `/arckit:roadmap` / `/arckit:strategy` — Architecture roadmap and executive strategy
+- `/arckit:platform-design` — Platform Design Toolkit canvases
+- `/arckit:data-mesh-contract` — Federated data product contracts
 
-#### Service Management
-- `/arckit.servicenow` - Generate ServiceNow service design
-- `/arckit.traceability` - Generate requirements traceability matrix
-- `/arckit.analyze` - Comprehensive governance quality analysis
-- `/arckit.data-mesh-contract` - Federated data product contracts
-- `/arckit.principles-compliance` - Architecture principles compliance scorecard
+#### Governance & Quality
+- `/arckit:traceability` — Requirements traceability matrix
+- `/arckit:principles-compliance` — Principles compliance scorecard
+- `/arckit:conformance` — ADR implementation and architecture drift assessment
+- `/arckit:analyze` — Comprehensive governance quality analysis
+- `/arckit:health` — Scan for stale artifacts, forgotten ADRs, orphan requirements
+- `/arckit:impact` — Blast-radius analysis for requirement or design changes
+- `/arckit:maturity-model` — Capability maturity model
 
 #### UK Government Compliance
-- `/arckit.service-assessment` - GDS Service Standard assessment preparation
-- `/arckit.tcop` - Technology Code of Practice assessment
-- `/arckit.ai-playbook` - AI Playbook compliance for responsible AI
-- `/arckit.dpia` - Data Protection Impact Assessment (UK GDPR Article 35)
-- `/arckit.atrs` - Algorithmic Transparency Recording Standard (ATRS) record
+- `/arckit:service-assessment` — GDS Service Standard (14 points)
+- `/arckit:tcop` — Technology Code of Practice
+- `/arckit:ai-playbook` / `/arckit:atrs` — AI Playbook and Algorithmic Transparency Record
+- `/arckit:dpia` — UK GDPR Article 35 Data Protection Impact Assessment
+- `/arckit:secure` / `/arckit:mod-secure` / `/arckit:jsp-936` — Secure by Design (civilian, MOD, JSP 936)
+- `/arckit:servicenow` — ServiceNow service design with CMDB and SLAs
 
-#### Security Assessment
-- `/arckit.secure` - UK Government Secure by Design
-- `/arckit.mod-secure` - MOD Secure by Design
-- `/arckit.jsp-936` - MOD JSP 936 AI assurance documentation
+#### EU & French Community Compliance
+- `/arckit:eu-rgpd`, `/arckit:eu-nis2`, `/arckit:eu-ai-act`, `/arckit:eu-dora`, `/arckit:eu-cra`, `/arckit:eu-dsa`, `/arckit:eu-data-act`
+- `/arckit:fr-rgpd`, `/arckit:fr-anssi`, `/arckit:fr-secnumcloud`, `/arckit:fr-dinum`, `/arckit:fr-dr`, `/arckit:fr-ebios`, `/arckit:fr-pssi`, `/arckit:fr-anssi-carto`, `/arckit:fr-marche-public`, `/arckit:fr-code-reuse`, `/arckit:fr-algorithme-public`
 
-#### Reporting
-- `/arckit.story` - Generate project story with timeline and governance achievements
-- `/arckit.pages` - Generate GitHub Pages site for project documentation
+#### Reporting & Publishing
+- `/arckit:story` — Project narrative with timeline and governance achievements
+- `/arckit:presentation` — MARP slide deck for governance boards
+- `/arckit:glossary` / `/arckit:search` — Consolidated glossary and artifact search
+- `/arckit:framework` — Transform artifacts into phased framework with executive guide
+- `/arckit:pages` — Generate documentation site with dashboard, viewer, and Mermaid rendering
 
 ## Project Structure
 
 ```
 smart-meter-app/
-├── .arckit/
-│   ├── templates/        # Document templates
-│   └── scripts/bash/     # Helper scripts
-│   ├── commands/         # ArcKit slash commands
-│   └── agents/           # Autonomous research agents
-├── .codex/prompts/       # Codex CLI commands
-├── .gemini/commands/     # Gemini CLI commands
+├── .claude/
+│   └── settings.json         # Plugin marketplace + MCP enablement
+├── .mcp.json                 # Microsoft Learn and AWS Knowledge MCP servers
 ├── docs/
-│   ├── guides/           # Command usage guides
-│   └── README.md         # Documentation index
+│   ├── index.html            # Generated documentation site
+│   ├── manifest.json         # Document index
+│   ├── health.json           # Governance health scan
+│   ├── llms.txt              # LLM/agent discovery index
+│   └── guides/               # Command usage guides (synced from plugin)
 ├── projects/
 │   ├── 000-global/
-│   │   ├── policies/     # Organisation-wide policy documents
-│   │   └── ARC-000-PRIN-v1.0.md
+│   │   ├── ARC-000-PRIN-v1.0.md   # Architecture Principles
+│   │   ├── policies/              # Organisation-wide policies
+│   │   └── external/              # Enterprise reference documents
 │   └── 001-smart-meter-app/
-│       ├── ARC-001-REQ-v1.0.md
-│       ├── ARC-001-STKE-v1.0.md
-│       ├── external/     # External documents (PDFs, images)
-│       └── vendors/      # Vendor submissions
-├── DEPENDENCY-MATRIX.md  # Command dependencies
-├── WORKFLOW-DIAGRAMS.md  # Visual workflows
-└── VERSION
+│       ├── ARC-001-REQ-v1.0.md    # Requirements
+│       ├── ARC-001-STKE-v1.0.md   # Stakeholder Drivers
+│       ├── ARC-001-RISK-v1.0.md   # Risk Register
+│       ├── ARC-001-PLAN-v1.0.md   # Project Plan
+│       ├── ARC-001-DATA-v1.0.md   # Data Model
+│       ├── ARC-001-DPIA-v1.0.md   # DPIA
+│       ├── ARC-001-SECD-v1.0.md   # Secure by Design
+│       ├── ARC-001-DSCT-v1.0.md   # Data Source Discovery
+│       ├── ARC-001-RSCH-v*.md     # Research findings
+│       ├── research/              # AWS/Azure/GCP research, gov reuse
+│       ├── decisions/             # ADRs
+│       ├── diagrams/              # Architecture diagrams
+│       ├── wardley-maps/          # Wardley Maps
+│       ├── reviews/               # HLD / DLD reviews
+│       ├── vendors/               # Vendor profiles and submissions
+│       └── external/              # External documents (PDFs, specs)
+└── CLAUDE.md                 # Project instructions for Claude Code
 ```
+
+ArcKit templates, scripts, commands, and agents are now provided by the [`arckit` plugin](https://tractorjuice.github.io/arc-kit/) rather than being copied into the repository.
 
 ## Documentation
 
