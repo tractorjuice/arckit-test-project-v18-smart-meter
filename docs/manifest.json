@@ -1,5 +1,5 @@
 {
-  "generated": "2026-03-13T10:59:29.044Z",
+  "generated": "2026-04-20T08:41:19.835Z",
   "repository": {
     "name": "arckit-test-project-v18-smart-meter"
   },
@@ -34,6 +34,12 @@
       "title": "Algorithmic Transparency Recording Standard Playbook",
       "category": "Compliance",
       "status": "alpha"
+    },
+    {
+      "path": "docs/guides/autoresearch.md",
+      "title": "Autoresearch Guide: Self-Improving Command Prompts",
+      "category": "Other",
+      "status": "beta"
     },
     {
       "path": "docs/guides/aws-research.md",
@@ -150,6 +156,48 @@
       "status": "beta"
     },
     {
+      "path": "docs/guides/eu-ai-act.md",
+      "title": "EU AI Act Compliance Assessment Playbook",
+      "category": "Compliance",
+      "status": "community"
+    },
+    {
+      "path": "docs/guides/eu-cra.md",
+      "title": "EU Cyber Resilience Act Compliance Playbook",
+      "category": "Compliance",
+      "status": "community"
+    },
+    {
+      "path": "docs/guides/eu-data-act.md",
+      "title": "EU Data Act Compliance Playbook",
+      "category": "Compliance",
+      "status": "community"
+    },
+    {
+      "path": "docs/guides/eu-dora.md",
+      "title": "EU DORA Compliance Playbook",
+      "category": "Compliance",
+      "status": "community"
+    },
+    {
+      "path": "docs/guides/eu-dsa.md",
+      "title": "EU Digital Services Act Compliance Playbook",
+      "category": "Compliance",
+      "status": "community"
+    },
+    {
+      "path": "docs/guides/eu-nis2.md",
+      "title": "EU NIS2 Directive Compliance Playbook",
+      "category": "Compliance",
+      "status": "community"
+    },
+    {
+      "path": "docs/guides/eu-rgpd.md",
+      "title": "EU GDPR Compliance Assessment Playbook",
+      "category": "Compliance",
+      "status": "community"
+    },
+    {
       "path": "docs/guides/evaluate.md",
       "title": "Vendor Evaluation Playbook",
       "category": "Procurement",
@@ -160,6 +208,72 @@
       "title": "FinOps Strategy Playbook",
       "category": "Operations",
       "status": "experimental"
+    },
+    {
+      "path": "docs/guides/fr-algorithme-public.md",
+      "title": "French Public Algorithm Transparency Notice Playbook",
+      "category": "Compliance",
+      "status": "community"
+    },
+    {
+      "path": "docs/guides/fr-anssi-carto.md",
+      "title": "ANSSI IS Cartography Playbook",
+      "category": "Architecture",
+      "status": "community"
+    },
+    {
+      "path": "docs/guides/fr-anssi.md",
+      "title": "ANSSI Security Posture Assessment Playbook",
+      "category": "Compliance",
+      "status": "community"
+    },
+    {
+      "path": "docs/guides/fr-code-reuse.md",
+      "title": "French Public Code Reuse Assessment Playbook",
+      "category": "Architecture",
+      "status": "community"
+    },
+    {
+      "path": "docs/guides/fr-dinum.md",
+      "title": "DINUM Digital Standards Assessment Playbook",
+      "category": "Compliance",
+      "status": "community"
+    },
+    {
+      "path": "docs/guides/fr-dr.md",
+      "title": "Diffusion Restreinte (DR) Handling Assessment Playbook",
+      "category": "Governance",
+      "status": "community"
+    },
+    {
+      "path": "docs/guides/fr-ebios.md",
+      "title": "EBIOS Risk Manager Playbook",
+      "category": "Governance",
+      "status": "community"
+    },
+    {
+      "path": "docs/guides/fr-marche-public.md",
+      "title": "French Public Procurement Playbook",
+      "category": "Procurement",
+      "status": "community"
+    },
+    {
+      "path": "docs/guides/fr-pssi.md",
+      "title": "PSSI (Information System Security Policy) Playbook",
+      "category": "Compliance",
+      "status": "community"
+    },
+    {
+      "path": "docs/guides/fr-rgpd.md",
+      "title": "French GDPR / CNIL Compliance Playbook",
+      "category": "Compliance",
+      "status": "community"
+    },
+    {
+      "path": "docs/guides/fr-secnumcloud.md",
+      "title": "SecNumCloud Qualification Assessment Playbook",
+      "category": "Compliance",
+      "status": "community"
     },
     {
       "path": "docs/guides/framework.md",
@@ -192,6 +306,24 @@
       "status": "experimental"
     },
     {
+      "path": "docs/guides/gov-code-search.md",
+      "title": "Government Code Search Guide",
+      "category": "Other",
+      "status": "beta"
+    },
+    {
+      "path": "docs/guides/gov-landscape.md",
+      "title": "Government Code Landscape Analysis Guide",
+      "category": "Other",
+      "status": "beta"
+    },
+    {
+      "path": "docs/guides/gov-reuse.md",
+      "title": "Government Code Reuse Assessment Guide",
+      "category": "Other",
+      "status": "beta"
+    },
+    {
       "path": "docs/guides/govs-007-security.md",
       "title": "GovS 007: Security — ArcKit Reference Guide",
       "category": "Compliance",
@@ -207,6 +339,12 @@
       "path": "docs/guides/hld-review.md",
       "title": "High-Level Design Review Playbook",
       "category": "Architecture",
+      "status": "beta"
+    },
+    {
+      "path": "docs/guides/hooks.md",
+      "title": "Hooks Guide",
+      "category": "Other",
       "status": "beta"
     },
     {
@@ -402,6 +540,12 @@
       "status": "beta"
     },
     {
+      "path": "docs/guides/session-memory.md",
+      "title": "Session Memory",
+      "category": "Other",
+      "status": "beta"
+    },
+    {
       "path": "docs/guides/sobc.md",
       "title": "Strategic Outline Business Case Playbook",
       "category": "Planning",
@@ -471,6 +615,30 @@
       "path": "docs/guides/upgrading.md",
       "title": "Upgrading ArcKit",
       "category": "Getting Started",
+      "status": "beta"
+    },
+    {
+      "path": "docs/guides/wardley-climate.md",
+      "title": "Climate Assessment Playbook",
+      "category": "Other",
+      "status": "beta"
+    },
+    {
+      "path": "docs/guides/wardley-doctrine.md",
+      "title": "Doctrine Assessment Playbook",
+      "category": "Other",
+      "status": "beta"
+    },
+    {
+      "path": "docs/guides/wardley-gameplay.md",
+      "title": "Gameplay Analysis Playbook",
+      "category": "Other",
+      "status": "beta"
+    },
+    {
+      "path": "docs/guides/wardley-value-chain.md",
+      "title": "Value Chain Decomposition Playbook",
+      "category": "Other",
       "status": "beta"
     },
     {
@@ -614,6 +782,10 @@
     "DLDR": "Architecture",
     "DATA": "Architecture",
     "WARD": "Architecture",
+    "WDOC": "Architecture",
+    "WGAM": "Architecture",
+    "WCLM": "Architecture",
+    "WVCH": "Architecture",
     "DIAG": "Architecture",
     "DFD": "Architecture",
     "ADR": "Architecture",
@@ -648,7 +820,29 @@
     "AWRS": "Research",
     "AZRS": "Research",
     "GCRS": "Research",
-    "STORY": "Reporting"
+    "GOVR": "Research",
+    "GCSR": "Research",
+    "GLND": "Research",
+    "GRNT": "Research",
+    "STORY": "Reporting",
+    "RGPD": "Compliance",
+    "NIS2": "Compliance",
+    "AIACT": "Compliance",
+    "DORA": "Compliance",
+    "CRA": "Compliance",
+    "DSA": "Compliance",
+    "DATAACT": "Compliance",
+    "CNIL": "Compliance",
+    "SECNUM": "Compliance",
+    "MARPUB": "Procurement",
+    "DINUM": "Compliance",
+    "EBIOS": "Governance",
+    "ANSSI": "Compliance",
+    "CARTO": "Architecture",
+    "DR": "Compliance",
+    "ALGO": "Compliance",
+    "PSSI": "Compliance",
+    "REUSE": "Procurement"
   },
   "projects": [
     {

@@ -1,0 +1,37 @@
+{
+  "generated": "2026-04-20T08:41:05.494Z",
+  "scanned": {
+    "projects": 1,
+    "artifacts": 10
+  },
+  "summary": {
+    "HIGH": 0,
+    "MEDIUM": 1,
+    "LOW": 0,
+    "total": 1
+  },
+  "byType": {
+    "STALE-RSCH": 0,
+    "FORGOTTEN-ADR": 0,
+    "UNRESOLVED-COND": 0,
+    "STALE-EXT": 0,
+    "ORPHAN-REQ": 1,
+    "MISSING-TRACE": 0,
+    "VERSION-DRIFT": 0
+  },
+  "projects": [
+    {
+      "id": "001-smart-meter-app",
+      "artifacts": 10,
+      "findings": [
+        {
+          "severity": "MEDIUM",
+          "rule": "ORPHAN-REQ",
+          "file": "ARC-001-REQ-v1.0.md",
+          "message": "Total requirements: 57\n  Requirements not referenced by any ADR: 57\n  Examples: BR-001, BR-002, BR-003, BR-004, BR-005 (+52 more)",
+          "action": "Review whether these requirements need architectural decisions documented as ADRs"
+        }
+      ]
+    }
+  ]
+}
