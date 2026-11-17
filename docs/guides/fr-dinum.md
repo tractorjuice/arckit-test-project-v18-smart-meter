@@ -2,7 +2,7 @@
 
 > **Guide Origin**: Community | **ArcKit Version**: [VERSION]
 
-`/arckit.fr-dinum` assesses compliance with French digital administration standards: RGI (interoperability), RGAA (accessibility), RGESN (eco-design), RGS (security), and the DINUM doctrine cloud de l'État. Applicable to French public services.
+`/arckit:fr-dinum` assesses compliance with French digital administration standards: RGI (interoperability), RGAA (accessibility), RGESN (eco-design), RGS (security), and the DINUM doctrine cloud de l'État. Applicable to French public services.
 
 ---
 
@@ -19,7 +19,7 @@
 ## Command
 
 ```bash
-/arckit.fr-dinum Assess DINUM digital doctrine compliance for <service description>
+/arckit:fr-dinum Assess DINUM digital doctrine compliance for <service description>
 ```
 
 Output: `projects/<id>/ARC-<id>-DINUM-v1.0.md`
@@ -32,11 +32,11 @@ Output: `projects/<id>/ARC-<id>-DINUM-v1.0.md`
 |---------|----------|
 | RGI v2 | Interoperability standards (open formats, APIs, protocols) |
 | RGAA v4.1 | Accessibility compliance (WCAG 2.1 AA + French extensions) |
-| RGESN | Eco-design for digital services (115 criteria) |
+| RGESN | Eco-design for digital services (RGESN 2024: 78 criteria in 9 families) |
 | RGS v2 | General security baseline for information systems |
 | Doctrine Cloud | Data classification, cloud strategy, SecNumCloud triggers |
 | SILL | Recommended open source software stack |
-| Code Reuse | Circulaire 2021 obligations (see `/arckit.fr-code-reuse`) |
+| Code Reuse | Circulaire 2021 obligations (see `/arckit:fr-code-reuse`) |
 | Gap Analysis | Priority gaps with regulatory reference |
 
 ---
@@ -57,10 +57,10 @@ Output: `projects/<id>/ARC-<id>-DINUM-v1.0.md`
 
 | Phase | Key Activities | ArcKit Commands |
 |-------|----------------|-----------------|
-| Discovery | Digital service scope | `/arckit.requirements` |
-| Assessment | DINUM standards compliance | `/arckit.fr-dinum` |
-| Cloud | SecNumCloud if sensitive data | `/arckit.fr-secnumcloud` |
-| Code reuse | Public code obligation | `/arckit.fr-code-reuse` |
+| Discovery | Digital service scope | `/arckit:requirements` |
+| Assessment | DINUM standards compliance | `/arckit:fr-dinum` |
+| Cloud | SecNumCloud if sensitive data | `/arckit:fr-secnumcloud` |
+| Code reuse | Public code obligation | `/arckit:fr-code-reuse` |
 
 ---
 
@@ -68,11 +68,11 @@ Output: `projects/<id>/ARC-<id>-DINUM-v1.0.md`
 
 - RGI: open standards and interoperable formats used; APIs RESTful with OpenAPI spec.
 - RGAA v4.1: accessibility audit planned; legal accessibility statement required.
-- RGESN: eco-design 115 criteria assessed for new digital service.
+- RGESN: the 78 criteria of RGESN 2024 (9 families) assessed for new digital service.
 - RGS: security level determined (RGS */** /***); homologation if required.
 - Doctrine cloud: data classification performed; SecNumCloud triggered if sensitive.
 - SILL: recommended open source stack consulted before procurement.
-- Code reuse: Circulaire 2021 obligations assessed (see `/arckit.fr-code-reuse`).
+- Code reuse: Circulaire 2021 obligations assessed (see `/arckit:fr-code-reuse`).
 
 ---
 
@@ -80,4 +80,5 @@ Output: `projects/<id>/ARC-<id>-DINUM-v1.0.md`
 
 - **DINUM** = Direction Interministérielle du Numérique — the French government digital directorate, analogous in purpose to the UK's GDS.
 - **RGAA is legally mandatory** for public administrations, public service delegatees, and organisations receiving public funding (Loi ELAN 2018).
+- **RGESN is not legally binding**: Arcep and Arcom publish it, with ADEME, under the REEN law (loi n° 2021-1485, art. 25), and the RGESN 2024 calls itself non-binding. It becomes a requirement only where the organisation's policy or a contract adopts it; claiming to apply it requires a published ecodesign declaration.
 - **RGS ≠ SecNumCloud**: RGS is a security baseline for IS — SecNumCloud is specifically for cloud hosting. Both can apply simultaneously.
